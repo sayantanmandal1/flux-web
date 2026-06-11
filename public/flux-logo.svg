@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="FLUX Media Player Logo">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <clipPath id="rnd"><rect width="512" height="512" rx="108" ry="108"/></clipPath>
+  </defs>
+  <rect width="512" height="512" rx="108" ry="108" fill="url(#bg)"/>
+  <rect width="512" height="260" rx="108" ry="108" fill="url(#shine)" clip-path="url(#rnd)"/>
+  <rect x="100" y="90" width="88" height="332" rx="16" ry="16" fill="white"/>
+  <rect x="100" y="90" width="260" height="84" rx="16" ry="16" fill="white"/>
+  <rect x="100" y="213" width="208" height="72" rx="16" ry="16" fill="white"/>
+  <polygon points="360,90 420,132 360,174" fill="rgba(255,255,255,0.65)"/>
+  <polygon points="308,213 368,249 308,285" fill="rgba(255,255,255,0.50)"/>
+</svg>

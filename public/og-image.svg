@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="100%" stop-color="#0a0a1a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Glow -->
+  <ellipse cx="600" cy="315" rx="500" ry="300" fill="url(#glow)"/>
+  <!-- Logo mark -->
+  <rect x="470" y="135" width="80" height="80" rx="18" fill="url(#logo-grad)"/>
+  <rect x="481" y="144" width="8" height="58" rx="2" fill="white"/>
+  <rect x="481" y="144" width="46" height="14" rx="2" fill="white"/>
+  <rect x="481" y="169" width="37" height="12" rx="2" fill="white"/>
+  <!-- FLUX text -->
+  <text x="600" y="290" text-anchor="middle" font-family="system-ui, sans-serif" font-size="100" font-weight="900" fill="url(#text-grad)">FLUX</text>
+  <!-- Tagline -->
+  <text x="600" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="300" fill="rgba(255,255,255,0.4)" letter-spacing="6">PLAY EVERYTHING. PERFECTLY.</text>
+  <!-- Badges -->
+  <rect x="350" y="395" width="140" height="32" rx="16" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="420" y="416" text-anchor="middle" font-family="monospace" font-size="11" fill="rgba(167,139,250,0.9)">120+ FORMATS</text>
+  <rect x="510" y="395" width="120" height="32" rx="16" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="570" y="416" text-anchor="middle" font-family="monospace" font-size="11" fill="rgba(167,139,250,0.9)">4K + HDR</text>
+  <rect x="650" y="395" width="140" height="32" rx="16" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.3)" stroke-width="1"/>
+  <text x="720" y="416" text-anchor="middle" font-family="monospace" font-size="11" fill="rgba(167,139,250,0.9)">FREE & OPEN</text>
+  <!-- URL -->
+  <text x="600" y="520" text-anchor="middle" font-family="monospace" font-size="16" fill="rgba(255,255,255,0.2)">fluxplayer.app</text>
+</svg>
