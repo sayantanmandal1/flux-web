@@ -42,11 +42,12 @@ export function DownloadButton({ size = 'md', className }: DownloadButtonProps) 
     (a) => a.name.endsWith('.exe') && a.name.includes('Setup')
   )
 
+  // Fallback URL used when GitHub API is rate-limited or unavailable
+  const FALLBACK_URL = 'https://github.com/sayantanmandal1/flux/releases/latest/download/FLUX-Setup-latest.exe'
+
   const handleDownload = () => {
-    if (!installerAsset) return
     setDownloading(true)
-    // Trigger browser download — secure, uses direct GitHub releases URL
-    window.location.href = installerAsset.browser_download_url
+    window.location.href = installerAsset?.browser_download_url ?? FALLBACK_URL
     setTimeout(() => setDownloading(false), 3000)
   }
 
@@ -68,7 +69,7 @@ export function DownloadButton({ size = 'md', className }: DownloadButtonProps) 
     <div className={cn('flex flex-col items-center gap-2', className)}>
       <button
         onClick={handleDownload}
-        disabled={loading || !installerAsset || downloading}
+        disabled={downloading}
         className={cn(
           'inline-flex items-center font-semibold text-white transition-all duration-200',
           'bg-gradient-to-r from-purple-600 to-indigo-600',
