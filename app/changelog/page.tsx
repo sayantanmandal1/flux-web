@@ -61,7 +61,7 @@ export default async function ChangelogPage() {
                     GitHub ↗
                   </a>
                 </div>
-                {r.body && (
+                {!!r.body && (
                   <div
                     className="prose prose-invert prose-sm max-w-none text-white/70
                                [&_h2]:text-white [&_h3]:text-white/80 [&_li]:marker:text-purple-400
